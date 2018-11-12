@@ -6,23 +6,12 @@ body {
 a {
 	text-decoration: none;
 	color: @color_3;
-}
-a:hover {
-	color: @color_3;
+	&:hover {
+		color: @color_3;
+	}
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	color: @color_3;
 }
 
@@ -31,11 +20,9 @@ h6,
 	border-color: @color_2;
 	background-color: transparent;
 	text-transform: uppercase;
-	font-weight: 300;
 	transition: all .3s ease;
 	border-radius: 4px;
 	padding: 9px 39px;
-	outline: none;
 	font-weight: 700;
 	&:hover {
 		transform: scale(1.03);
@@ -54,22 +41,20 @@ h6,
 .form-control {
 	border-radius: 4px;
 	border-color: @color_1;
-	margin-bottom: 10px;
-	outline: none;
 }
 
 // Section
 .section {
 	position: relative;
 	overflow: hidden;
-	padding: 110px 0;
+	padding: 75px 0;
 	@media (max-width: @breakpoint_md) {
-		padding: 70px 0;
+		padding: 60px 0;
 	}
 	&__title {
 		position: relative;
 		text-transform: uppercase;
-		margin-bottom: 110px;
+		margin-bottom: 60px;
 		z-index: 1;
 	  font-size: 30px;
 		&::after{
