@@ -10,7 +10,7 @@
   &Item {
     display: flex;
     align-items: center;
-    margin-bottom: 21px;
+    margin-bottom: 60px;
     &:last-child {
       margin-bottom: 0;
     }
@@ -25,6 +25,18 @@
       color: @color_4;
       font-size: 20px;
       margin-right: 30px;
+      position: relative;
+      &::after {
+        content: '⇓';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -45px;
+        color: #ccc;
+      }
+    }
+    &:last-child &__icon::after {
+      display: none;
     }
     &__title {}
   }
