@@ -63,27 +63,28 @@ h6,
 	position: relative;
 	overflow: hidden;
 	padding: 110px 0;
-	@media (max-width:960px) {
+	@media (max-width: @breakpoint_md) {
 		padding: 70px 0;
+	}
+	&__title {
+		position: relative;
+		text-transform: uppercase;
+		margin-bottom: 110px;
+		z-index: 1;
+	  font-size: 30px;
+		&::after{
+			content: "";
+			width: 24px;
+			height: 24px;
+			border-radius: 4px;
+			background-color: @color_1;
+			position: absolute;
+		  top: -3px;
+		  left: -10px;
+		  z-index: -1;
+		}
 	}
 	&--grey {
 		background-color: @color_2;
-	}
-}
-.section__title {
-	position: relative;
-	margin-bottom: 110px;
-	z-index: 1;
-   font-size: 30px;
-	&::after{
-		content: "";
-		width: 24px;
-		height: 24px;
-		border-radius: 4px;
-		background-color: @color_1;
-		position: absolute;
-	  top: -3px;
-	  left: -10px;
-	  z-index: -1;
 	}
 }
