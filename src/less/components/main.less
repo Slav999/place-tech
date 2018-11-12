@@ -1,0 +1,86 @@
+body {
+	overflow: auto;
+	font-family: 'Open Sans', sans-serif;
+	color: @color_3;
+}
+a {
+	text-decoration: none;
+	color: @color_3;
+}
+a:hover {
+	color: @color_3;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	color: @color_3;
+}
+
+.btn {
+	text-align: center;
+	border-color: @color_2;
+	background-color: transparent;
+	text-transform: uppercase;
+	font-weight: 300;
+	transition: all .3s ease;
+	border-radius: 4px;
+	outline: none;
+	@media (max-width:960px) {
+		width: 100%;
+	}
+	&-primary {
+		border-color: @color_1;
+		&:hover {
+			background-color: @color_1;
+			color: white;
+		}
+	}
+}
+
+.b, .strong, b, strong {
+   font-weight: 900;
+}
+
+.form-control {
+	border-radius: 4px;
+	border-color: @color_1;
+	margin-bottom: 10px;
+	outline: none;
+}
+
+// Section
+.section {
+	position: relative;
+	overflow: hidden;
+	padding: 110px 0;
+	@media (max-width:960px) {
+		padding: 70px 0;
+	}
+}
+.section__title {
+	position: relative;
+	margin-bottom: 110px;
+	z-index: 1;
+   font-size: 30px;
+	&::after{
+		content: "";
+		width: 24px;
+		height: 24px;
+		border-radius: 4px;
+		background-color: @color_1;
+		position: absolute;
+	  top: -3px;
+	  left: -10px;
+	  z-index: -1;
+	}
+}

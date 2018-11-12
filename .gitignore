@@ -1,0 +1,4 @@
+node_modules/ 
+dist/*.html 
+dist/assets/css/styles.css 
+package-lock.json

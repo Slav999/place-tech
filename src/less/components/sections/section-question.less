@@ -1,0 +1,42 @@
+.sectionFAQ {
+  &__title {
+    margin-bottom: 110px;
+  }
+  &__content {
+    border: 1px solid @color_2;
+    border-radius: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  &Item {
+    &:hover {
+      background-color: @color_2;
+    }
+    &__q {
+      padding: 12px 18px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background-color .3s ease-in;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &::after {
+        content: '+';
+      }
+      &.active {
+        background-color: @color_1;
+        &::after {
+          content: '-';
+        }
+      }
+    }
+    &__a {
+      padding: 12px 18px;
+      color: #666;
+      display: none;
+      & > *:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

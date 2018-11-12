@@ -1,0 +1,31 @@
+.sectionStage {
+  &__row {
+    align-items: center;
+  }
+  &__right {
+    @media (min-width: @breakpoint_md) {
+      padding-left: 60px;
+    }
+  }
+  &Item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 21px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &__icon {
+      border-radius: 50%;
+      width: 42px;
+      height: 42px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: @color_1;
+      color: @color_4;
+      font-size: 20px;
+      margin-right: 30px;
+    }
+    &__title {}
+  }
+}
