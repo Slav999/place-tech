@@ -1,18 +1,8 @@
 .header
   .container
-    .row.header__top
-      a.header__logo(href="/"): img(src="assets/images/logo.png", alt="logo")
-      a.header__email(href="#") s@place-tech.com
-    h1.header__title #[span.fat__text КАК ЗАРАБАТЫВАТЬ,] #[br] СДАВАЯ В АРЕНДУ СПЕЦТЕХНИКУ, НЕ ИМЕЯ #[br] НИ ОДНОЙ ЕДИНИЦЫ ТЕХНИКИ?
-    h2.title__bottom #[span.allotted__text ЭТО ВАМ НЕ] ФРАНШИЗА!
-    .headerArrow
-      a.header__arrow(href="#stage", data-target="anchor"): img(src="assets/images/arrow.png", alt="")
-.headerBottom
-  .container
-    .row.header__bottom
-      .col-4.col-md-12
-        h3.titles #[span.titles__text НЕТ]  #[br] ВЗНОСА
-      .col-4.col-md-12
-        h3.titles #[span.titles__text НЕТ]  #[br] РОЯЛТИ
-      .col-4.col-md-12
-        h3.titles #[span.titles__text НЕТ]  #[br] ВЛОЖЕНИЙ
+    .row.header__row
+      .col-4.hidden-md
+      .col-4.col-md-12.text-center
+        img(src="assets/images/logo.png", alt="Place Tech").header__logo
+      .col-4.col-md-12.text-right.text-md-center
+        a(href="mailto:s@place-tech.com").header__email s@place-tech.com
